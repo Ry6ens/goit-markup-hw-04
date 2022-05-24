@@ -146,6 +146,11 @@ img {
     padding-bottom: 200px;
     text-align: center;
     background: #2F303A;
+
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero.jpg);
 }
 
 .hero-title {
@@ -189,6 +194,18 @@ img {
 
 .features-item:last-child {
     margin-right: 0;
+}
+
+.features-item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: #F5F4FA;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .features-title {
@@ -264,6 +281,38 @@ img {
     text-align: center;
 
     color: var(--secondary-text-color);
+}
+
+.icon-society {
+    display: flex;
+    padding: 0;
+    margin: 16px 32px 30px 32px;
+    list-style: none;
+}
+
+.list-society {
+    display: block;
+    content: '';
+    margin-right: 10px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.society {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #AFB1B8;
+}
+
+.society:hover {
+    fill: white;
+    background-color: var(--accent-color);
 }
 
 /* Filter */
