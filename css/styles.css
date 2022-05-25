@@ -124,11 +124,6 @@ img {
     margin-right: 50px;
 }
 
-.icon-info {
-    margin-left: 10px;
-    color: var(--secondary-text-color);
-}
-
 .nav-link,
 .nav-contact {
     padding-top: 32px;
@@ -149,11 +144,9 @@ img {
 
 .nav-icon {
     margin-right: 10px;
-    fill: var(--secondary-text-color);
+    fill: currentColor;
 }
 
-.nav-item:hover,
-.nav-item:focus,
 .nav-icon:hover,
 .nav-icon:focus,
 .nav-link:hover,
@@ -423,6 +416,7 @@ img {
     line-height: 1.625;
     letter-spacing: 0.03em;
     text-align: center;
+    border: 0px;
     border-radius: 4px;
 
     cursor: pointer;
@@ -469,7 +463,7 @@ img {
 
 .portfolio-card:hover,
 .portfolio-card:focus {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-frame {
@@ -506,6 +500,7 @@ img {
 
 .footer-layer {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo {
@@ -547,7 +542,6 @@ img {
 }
 
 .connect-title {
-    margin-top: 10px;
     margin-bottom: 20px;
 
     font-weight: bold;
